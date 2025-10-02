@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home' %}">
+      {% if caption %}
+        {{ caption }}
+      {% else %}
+        CatDjango
+      {% endif %}
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'page2' %}">Новая</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
